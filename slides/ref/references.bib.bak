@@ -1,0 +1,66 @@
+% Encoding: UTF-8
+
+@Book{Atkins:etal:2023,
+  author    = {P. Atkins and J. {De Paula} and J. Keeler},
+  publisher = {Oxford University Press},
+  title     = {Atkins' physical chemistry},
+  year      = {2023},
+  edition   = {12th},
+}
+
+@Book{Smith:etal:2005,
+  author    = {J. M. Smith and H. C. {Van Ness} and M. M. Abbott},
+  publisher = {McGraw-Hill},
+  title     = {Introduction to chemical engineering thermodynamics},
+  year      = {2005},
+  edition   = {7th},
+}
+
+@Article{Felici:etal:2011,
+  author  = {F. Felici and O. Sauter and S. Coda and B. P. Duval and T. P. Goodman and J.-M. Moret and J. I. Paley and {the TCV Team}},
+  journal = {Nuclear Fusion},
+  title   = {Real-time physics-model-based simulation of the current density profile in tokamak plasmas},
+  year    = {2011},
+  pages   = {083052},
+  volume  = {51},
+  doi     = {10.1088/0029-5515/51/8/083052},
+}
+
+@TechReport{Pereverzev:Yushmanov:2002,
+  author      = {G. Pereverzev and P. N. Yushmanov},
+  institution = {Max-Planck-Institut f{\"{u}}r Plasmaphysik},
+  title       = {{ASTRA} automated system for transport analysis in a tokamak},
+  year        = {2002},
+  number      = {IPP 5/98},
+}
+
+@Article{Sauter:etal:1999,
+  author  = {O. Sauter and C. Angioni and Y. R. Lin-Liu},
+  journal = {Physics of Plasmas},
+  title   = {Neoclassical conductivity and bootstrap current formulas for general axisymmetric equilibria and arbitrary collision regime},
+  year    = {1999},
+  number  = {7},
+  pages   = {2834--2839},
+  volume  = {6},
+  doi     = {10.1063/1.873240},
+}
+
+@Book{Blum:1989,
+  author    = {J. Blum},
+  publisher = {Wiley},
+  title     = {Numerical simulation and optimal control in plasma physics: With applications to tokamaks},
+  year      = {1989},
+  series    = {Gauthier-Villars Series in Modern Applied Mathematics},
+}
+
+@Article{Witrant:etal:2007,
+  author  = {E. Witrant and E. Joffrin and S. Br{\'{e}}mond and G. Giruzzi and D. Mazon and O. Barana and P. Moreau},
+  journal = {Plasma Physics and Controlled Fusion},
+  title   = {A control-oriented model of the current profile in tokamak plasma},
+  year    = {2007},
+  pages   = {1075--1105},
+  volume  = {49},
+  doi     = {10.1088/0741-3335/49/7/009},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

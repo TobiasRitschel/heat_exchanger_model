@@ -1,0 +1,2 @@
+\beamer@sectionintoc {1}{Model equations}{2}{0}{1}
+\beamer@sectionintoc {2}{Bibliography}{5}{0}{2}

@@ -1,0 +1,91 @@
+\begin{frame}{Model equations and initial condition}
+	\begin{scriptsize}
+		\begin{itemize}
+			\item The fuel flows through a cylindrical tube at constant velocity. The position of the left end is $z_0$ and that of the right end is $z_f$.
+			%
+			\item The coolant flows in the opposite direction in a cylindrical tube covering the inner fuel tube.
+			%
+			\item The fuel and coolant are not in direct contact: Heat is only exchanged through the tubing material separating the two fluids.
+			%
+			\item We account for the fuel and coolant flows, but we disregard conduction in the tubing as well as losses to the surroundings.
+			%
+			\item The inlet fuel and coolant temperatures and concentrations (essentially, identical to the densities) are known.
+		\end{itemize}
+	\end{scriptsize}
+\end{frame}
+
+\begin{frame}{Model equations}
+	\begin{scriptsize}
+		\begin{itemize}
+			\item Fuel and coolant molar fluxes (steady state and homogeneous in space)
+			%
+			\begin{subequations}
+				\begin{align}
+					N^f(t, z) &= v^f c^f, \\
+					N^c(t, z) &= v^c c^c
+				\end{align}
+			\end{subequations}
+			%
+			\item Fuel, tubing, and coolant energy balances
+			%
+			\begin{subequations}
+				\begin{align}
+					\partial_t u^f &= -\partial_z H(T^f, P^f, N^f) + Q^{tf}, \\
+					\partial_t u^t &= Q^{ft} + Q^{ct}, \\
+					\partial_t u^c &= -\partial_z H(T^c, P^c, N^c) + Q^{tc}
+				\end{align}
+			\end{subequations}
+			%
+			\item Heat transfers (Newton's law of cooling)
+			%
+			\begin{subequations}
+				\begin{align}
+					Q^{tf} &= -k_{tf} (T^f - T^t), &
+					Q^{ft} &= -Q^{tf}, \\
+					Q^{tc} &= -k_{tc} (T^c - T^t), &
+					Q^{ct} &= -Q^{tc}
+				\end{align}
+			\end{subequations}
+			%
+			\item Boundary conditions etc.
+			%
+			\begin{align}
+				T^f(t, z_0) &= T_{in}^f, &
+				T^c(t, z_f) &= T_{in}^c, &
+				\sgn v^f &= -\sgn v^c
+			\end{align}
+		\end{itemize}
+	\end{scriptsize}
+\end{frame}
+
+\begin{frame}{Thermodynamics}
+	\begin{scriptsize}
+		\begin{itemize}
+			\item Internal energies (the product of concentration, molar specific heat capacity at constant pressure, and temperature)
+			%
+			\begin{align}
+				u^f &= c^f c_P^f T^f, &
+				u^t &= c^t c_P^t T^t, &
+				u^c &= c^c c_P^c T^c
+			\end{align}
+			%
+			\item Pure component enthalpies
+			%
+			\begin{subequations}
+				\begin{align}
+					H^f(T, P, n) &= n\, h^f(T, P), &
+					h^f(T, P) &= h^f(T_0, P_0) + c_P^f (T - T_0), \\
+					H^c(T, P, n) &= n\, h^c(T, P), &
+					h^c(T, P) &= h^c(T_0, P_0) + c_P^c (T - T_0)
+				\end{align}
+			\end{subequations}
+			%
+			\item Partial derivative of enthalpy ($N$ is molar flux)
+			%
+			\begin{align}
+				\partial_z H(T, P, N) &= \underbrace{\partial_z N}_{=0}\, h(T, P) + N \partial_z h(T, P), &
+				\partial_z h(T, P) &= c_P \partial_z T
+			\end{align}
+		\end{itemize}
+	\end{scriptsize}
+\end{frame}
